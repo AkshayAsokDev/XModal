@@ -21,3 +21,7 @@ button {
 .inputDiv {
   width: 100%;
 }
+
+.overlay-test {
+  pointer-events: none !important;
+}

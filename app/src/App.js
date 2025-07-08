@@ -64,6 +64,7 @@ function Modal({isOpen, setIsOpen, formData, setFormData}) {
         onRequestClose={() => setIsOpen(false)}
         shouldCloseOnOverlayClick={true}
         ariaHideApp={false}
+        overlayClassName={window.Cypress ? 'overlay-test' : ''}
         style={{
           content: {
             width: "50vw",
