@@ -66,6 +66,7 @@ function Modal({isOpen, setIsOpen, formData, setFormData}) {
         onRequestClose={() => setIsOpen(false)}
         shouldCloseOnOverlayClick={true}
         ariaHideApp={false}
+        parentSelector={() => document.getElementById('root')}
         style={{
           content: {
             width: "50vw",
