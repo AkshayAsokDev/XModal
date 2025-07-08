@@ -2,7 +2,7 @@ import './App.css';
 import ReactModal from 'react-modal';
 import { useState, useRef } from 'react';
 
-const temp = document.getElementById('root');
+// const temp = document.getElementById('root');
 
 function Modal({isOpen, setIsOpen, formData, setFormData}) {
 
@@ -157,10 +157,6 @@ function App() {
     email: "",
     phone: "",
     dob: ""
-  })
-
-  temp.addEventListener('click', () => {
-    setIsOpen(false);
   })
 
   return (
