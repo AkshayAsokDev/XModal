@@ -62,6 +62,7 @@ function Modal({isOpen, setIsOpen, formData, setFormData}) {
         <ReactModal
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
+        shouldCloseOnOverlayClick={true}
         style={{
           content: {
             width: "50vw",
