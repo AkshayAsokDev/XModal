@@ -17,7 +17,7 @@ function Modal({isOpen, setIsOpen, formData, setFormData}) {
         dob: e.target.elements.dob.value,
         phone: e.target.elements.phone.value
     }
-    console.log("data >> ", data);
+    // console.log("data >> ", data);
     
     
 
@@ -33,7 +33,7 @@ function Modal({isOpen, setIsOpen, formData, setFormData}) {
 
     // email contains an '@'
     if(!data.email.includes('@')){
-      window.alert("Invalid email")
+      window.alert("Invalid email. Please check your email address.")
       emailRef.current.setCustomValidity(`Please include an '@' in the email. '${data.email}' does not contain '@'`);
       emailRef.current.reportValidity();
       return false
@@ -130,7 +130,7 @@ function Modal({isOpen, setIsOpen, formData, setFormData}) {
                   />
                 </div>
 
-                <button type='submit' >Submit</button>
+                <button type='submit' className='submit-button'>Submit</button>
 
               </form>
 
